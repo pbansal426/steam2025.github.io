@@ -54,7 +54,7 @@ body {
 
 #menu-items:hover > .menu-item:hover {
     opacity: 1;
-    transform: scale(2);
+    transform: scale(1.75);
 }
 
 #menu-items {
