@@ -87,3 +87,43 @@ body {
 #menu-logos:hover > .menu-logo:hover {
     opacity: 1;
 }
+
+h1, h2 {
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid white;
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc;
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+    margin: 1rem auto;
+    padding: 0 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+    text-align: center;
+    margin: 1rem 2rem;
+}
