@@ -21,9 +21,118 @@
             </a>
         </div>
         <div id="menu-items">
-            <a href="home.html" class="menu-item">Home</a>
-            <a href="about.html" class="menu-item">About</a>
-            <a href="contact.html" class="menu-item">Contact Us</a>
+            <a href="#home" class="menu-item">Home</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#contact" class="menu-item">Contact Us</a>
         </div>
     </div>
-   
+
+    <div id="home" class="content-container">
+        <h1>D128 STEAM 2024 Showcase</h1>
+        <h2>Welcome to the 2024 STEAM Showcase!</h2>
+        <p>Email: <a href="mailto:adam.lueken@d128.org">adam.lueken@d128.org</a></p>
+        <p>An opportunity for VHHS and LHS students to showcase their STEAM projects that they have worked so hard on this past semester. Students will compete in the categories: Science, Technology, Engineering, Entrepreneurship, Equity, Arts, and Math to create solutions to real-world problems.</p>
+        <h3>Submit Your Project</h3>
+        <p><a href="#">Click here to submit your project</a></p>
+        <h3>Timeline</h3>
+        <ul>
+            <li><strong>NOW!</strong> - Submit your project using the link above</li>
+            <li><strong>1/8, 2:00 PM</strong> - Deadline to submit/edit your submission</li>
+            <li><strong>1/10</strong> - The top 3-6 from each division will be asked to present their projects to judges on 1/12</li>
+            <li><strong>1/12</strong> - VHHS presentations during lunch periods</li>
+            <li><strong>1/12</strong> - Award Ceremony at VHHS</li>
+        </ul>
+        <h3>Past Winners</h3>
+        <ul>
+            <li><a href="#">2023 Winners</a></li>
+            <li><a href="#">2022 Winners</a></li>
+        </ul>
+    </div>
+
+    <div id="about" class="content-container">
+        <h1>About the D128 STEAM Showcase</h1>
+        <h2>Judging Criteria</h2>
+        <table>
+            <tr><th>Points</th><th>Criteria</th></tr>
+            <tr><td>30 pts</td><td>Problem Identification: How pertinent is your problem?</td></tr>
+            <tr><td>20 pts</td><td>Solution: How feasible and logical is your project?</td></tr>
+            <tr><td>20 pts</td><td>Creativity: How innovative and DARING is your project?</td></tr>
+            <tr><td>20 pts</td><td>Theme: How well does your project fit the theme?</td></tr>
+            <tr><td>10 pts</td><td>Presentation: How professional and engaging is it?</td></tr>
+        </table>
+        <h2>Prizes</h2>
+        <p>Prizes will be awarded based on the overall scores and performance in each division. Here's what you can win:</p>
+        <ul>
+            <li>First Place: Exciting Prize and Certificate of Achievement</li>
+            <li>Second Place: Amazing Prize and Certificate of Achievement</li>
+            <li>Third Place: Fantastic Prize and Certificate of Achievement</li>
+        </ul>
+        <h2>Frequently Asked Questions</h2>
+        <h3>What kinds of problems should I tackle? I'm lost!</h3>
+        <p>Try the UN Development Goals website for ideas. Think big, and think impactful.</p>
+        <h3>What is the overall division? Can I win it?</h3>
+        <p>If you sign up for 3 or more divisions, you're automatically entered. Your average score across your divisions will be your overall score.</p>
+        <h3>I created a project this semester for class or a club or for fun, can I use that project?</h3>
+        <p>Yes, absolutely!!! That's the idea, to show off cool things you've made!</p>
+        <h3>Can I win more than one division/prize?</h3>
+        <p>Unfortunately, no. You may only win one of the individual divisions or win the overall (which is what you want).</p>
+        <h3>Project Examples</h3>
+        <ul>
+            <li><strong>Science:</strong> Experiment on stress' contributions to tumor progression</li>
+            <li><strong>Technology:</strong> Student-made video games</li>
+            <li><strong>Engineering:</strong> Road redesigns of Route 60</li>
+            <li><strong>Entrepreneur:</strong> Homework helper, stock trading program</li>
+            <li><strong>Equity:</strong> Proposal for ending child marriage</li>
+            <li><strong>Arts:</strong> Pending</li>
+            <li><strong>Math:</strong> Pending</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="content-container">
+        <h1>Contact Us</h1>
+        <h2>General Inquiries</h2>
+        <p>Email: <a href="mailto:adam.lueken@d128.org">adam.lueken@d128.org</a></p>
+        <h2>Website Issues</h2>
+        <p>If you're experiencing problems with the website, please contact:</p>
+        <p>Email: <a href="mailto:caleb.lai@vhhscougars.org">caleb.lai@vhhscougars.org</a></p>
+        <h2>Follow Us</h2>
+        <p>[Add social media links here]</p>
+        <h2>School Websites</h2>
+        <ul>
+            <li><a href="https://www.d128.org/" target="_blank">District 128</a></li>
+            <li><a href="https://www.d128.org/vhhs" target="_blank">Vernon Hills High School</a></li>
+            <li><a href="#">Libertyville High School</a></li>
+        </ul>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const menu = document.getElementById('menu');
+            const home = document.getElementById('home');
+            const about = document.getElementById('about');
+            const contact = document.getElementById('contact');
+
+            if (window.scrollY > 0) {
+                menu.style.opacity = '1';
+                menu.style.transform = 'translateY(0)';
+                menu.style.height = 'auto';
+            }
+
+            if (window.scrollY > home.offsetTop - window.innerHeight / 2) {
+                home.style.opacity = '1';
+                home.style.transform = 'translateY(0)';
+            }
+
+            if (window.scrollY > about.offsetTop - window.innerHeight / 2) {
+                about.style.opacity = '1';
+                about.style.transform = 'translateY(0)';
+            }
+
+            if (window.scrollY > contact.offsetTop - window.innerHeight / 2) {
+                contact.style.opacity = '1';
+                contact.style.transform = 'translateY(0)';
+            }
+        });
+    </script>
+</body>
+</html>

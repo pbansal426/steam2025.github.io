@@ -88,6 +88,44 @@ body {
     opacity: 1;
 }
 
+/* Home */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    opacity: 0;
+    transform: translateY(100vh);
+    transition: opacity 1s ease, transform 1s ease, height 1s ease;
+    height: 0; 
+}
+
+.home-item {
+    color: white;
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-family: "Ibarra Real Nova", serif;
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0;
+    transition: opacity 400ms ease, transform 400ms ease;
+}
+
+#home-items:hover > .menu-item {
+    opacity: 0.3;
+    transform: scale(0.75);
+}
+
+#home-items:hover > .menu-item:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+#home-items {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
 h1, h2 {
     color: white;
     font-family: "Ibarra Real Nova", serif;
